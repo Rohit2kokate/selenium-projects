@@ -1,0 +1,19 @@
+package xpathbytext;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class bytext {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver web=new ChromeDriver();
+		web.get("https://www.flipkart.in");
+		web.manage().window().maximize();
+		//String s=web.getTitle();
+		//System.out.println(s);
+		web.findElement(By.xpath("//*[contains(text(),'Home & Furniture'")).click();
+	}
+
+}

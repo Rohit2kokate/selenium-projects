@@ -1,0 +1,24 @@
+package firstt;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class firsttry {
+    public static void main(String[] args) {
+        
+    	//ChromeDriver ch=new ChromeDriver();
+       WebDriver driver = new ChromeDriver();
+       driver.get("https://amazon.in/");
+       
+       String s=driver.getTitle();
+       
+       if(s.equals("Google")) {
+    	   System.out.println("passed");
+       }
+       else {
+    	   System.out.println("failed");
+       }
+       
+       driver.close();
+    }
+}

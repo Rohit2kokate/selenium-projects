@@ -1,0 +1,13 @@
+package firstt;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+public class secound {
+	 public static void main(String[] args) {
+		 WebDriver drive=new ChromeDriver();
+		 drive.get("https://www.amazon.in");
+		 boolean a=drive.findElement(By.id("container")).isDisplayed();
+		 System.out.println(a);
+		 drive.quit();
+	 }
+}
